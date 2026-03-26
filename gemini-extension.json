@@ -1,0 +1,39 @@
+{
+  "name": "memoriant-architecture-review-skill",
+  "version": "1.0.0",
+  "description": "Structured AI-assisted architecture reviews — accepts a brief, produces narrative summary, risk table, tradeoffs, questions, checklist, and evidence log entry.",
+  "author": "Nathan Maine",
+  "repository": "https://github.com/NathanMaine/memoriant-architecture-review-skill",
+  "license": "MIT",
+  "gemini": {
+    "cli_version": ">=0.1.0"
+  },
+  "skills": [
+    {
+      "name": "architecture-review",
+      "description": "Conduct a structured architecture review from a YAML brief or inline description, producing risks, tradeoffs, questions, checklist, and an evidence log entry.",
+      "file": "./skills/architecture-review/SKILL.md",
+      "triggers": [
+        "review this architecture",
+        "architecture review",
+        "design review",
+        "assess architecture risks",
+        "review architecture brief",
+        "generate architecture checklist"
+      ]
+    }
+  ],
+  "agents": [
+    {
+      "name": "architecture-review-agent",
+      "description": "Autonomous agent that conducts structured architecture reviews from briefs and maintains an evidence audit log.",
+      "file": "./agents/architecture-review-agent.md",
+      "model": "gemini-2.0-flash"
+    }
+  ],
+  "install": {
+    "claude_code": "claude mcp add memoriant-architecture-review-skill",
+    "codex": "codex install NathanMaine/memoriant-architecture-review-skill",
+    "gemini": "gemini extension install NathanMaine/memoriant-architecture-review-skill"
+  }
+}

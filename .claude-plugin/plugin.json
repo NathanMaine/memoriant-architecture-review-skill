@@ -1,0 +1,23 @@
+{
+  "name": "memoriant-architecture-review-skill",
+  "version": "1.0.0",
+  "description": "AI-assisted architecture review for Claude Code — accepts a structured architecture brief, produces a narrative review with risks, tradeoffs, and follow-up questions, and appends an evidence record to an audit log.",
+  "author": {
+    "name": "Nathan Maine",
+    "url": "https://github.com/NathanMaine"
+  },
+  "repository": "https://github.com/NathanMaine/memoriant-architecture-review-skill",
+  "license": "MIT",
+  "keywords": [
+    "architecture",
+    "design-review",
+    "risk-analysis",
+    "checklist",
+    "evidence-log",
+    "memoriant",
+    "claude-code",
+    "skill"
+  ],
+  "skills": "./skills/",
+  "agents": "./agents/"
+}
