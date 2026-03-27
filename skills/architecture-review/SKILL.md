@@ -1,8 +1,6 @@
 ---
 name: architecture-review
 description: Conduct a structured AI-assisted architecture review from a brief YAML or Markdown input. Produce a narrative review, risk list, follow-up questions, and a checklist. Append an evidence record to a JSONL audit log.
-version: 1.0.0
-tags: [architecture, design, risk, review, evidence-log]
 ---
 
 # Architecture Review Skill
